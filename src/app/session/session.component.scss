@@ -1,0 +1,41 @@
+h4 {
+  margin: 0;
+  color: lightgray;
+}
+p {
+  color: lightgray;
+}
+.someAd {
+  height: 275px;
+  width: 100%;
+}
+.createSession {
+  text-align: right;
+  width: 45%;
+}
+.joinSession {
+  width: 45%;
+}
+.devider {
+  width: 10%;
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+.bottomWrapper {
+  display: flex;
+  padding: 25px;
+  border-top: 1px solid gray;
+}
+.bottomWrapper button {
+  height: 40px;
+  width: 80px;
+  border: none;
+  background-color: rgb(255, 99, 24);
+  border-radius: 5px;
+}
+.someAd {
+  background-image: url("../../assets/someAd.png");
+  background-size: cover;
+}

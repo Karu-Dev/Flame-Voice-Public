@@ -1,0 +1,21 @@
+<div *ngIf="session; else noSession"></div>
+
+<ng-template #noSession>
+  <div class="someAd"></div>
+  <div class="bottomWrapper">
+    <div class="createSession">
+      <h4>Create a Session</h4>
+      <p>Create a random session to talk to your friends!</p>
+      ~
+      <button (click)="createSession()">Create</button>
+    </div>
+    <div class="devider">
+        Or
+    </div>
+    <div class="joinSession">
+      <H4>Join a Session</H4>
+      <p>Join a session with a session invite link!</p>
+      <button (click)="joinSession()">Join</button>
+    </div>
+  </div>
+</ng-template>

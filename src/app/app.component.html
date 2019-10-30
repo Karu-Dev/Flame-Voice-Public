@@ -1,0 +1,48 @@
+<div *ngIf="loggedIn; else loginForm" class="appWrapper">
+  <div class="header">
+    <img src="../assets/logo.png" width="30px" height="30px" />
+    <h2>FL<span>A</span>ME</h2>
+  </div>
+  <div class="appBody">
+    <div class="session">
+      <app-session></app-session>
+    </div>
+    <div class="rightContainer">
+
+    </div>
+  </div>
+</div>
+<div class="appFooter"></div>
+
+<ng-template #loginForm>
+  <div class="wrapper">
+    <div class="loginFormWrapper">
+      <div class="logo">
+        <img src="../remvoice/assets/logo.png" width="70px" height="70px" />
+        <h1>FL<span>A</span>ME</h1>
+      </div>
+      <div class="loginInputWrapper">
+        <form class="loginForm">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            [(ngModel)]="login.email"
+          />
+          <input
+            class="password"
+            type="password"
+            name="password"
+            [(ngModel)]="login.password"
+          />
+          <div class="buttonContainer">
+            <button class="login" (click)="doLogin()">Login</button>
+            <button class="signUp" (click)="doSignUp()">SignUp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<router-outlet></router-outlet>
